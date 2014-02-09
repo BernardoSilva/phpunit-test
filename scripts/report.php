@@ -35,8 +35,16 @@ $currencyWebservice = new CurrencyWebservice();
 // pass currencyWebservice dependency to instantiate currency converter
 $currencyConverter = new CurrencyConverter($currencyWebservice);
 
-foreach ($merchant->getTransactions() as $transaction) {
-    echo "date: " . $transaction->getDate() . "\t";
-    $value = $currencyConverter->convert($transaction->getValue(), $transaction->getCurrencyIsoCode(), $reportCurrency);
-    echo "value: " . CurrencyConverter::$currencies[$reportCurrency]['sign'] . $value . " \n";
+$merchantTransactions = $merchant->getTransactions();
+
+if(count($merchantTransactions) > 0){
+    foreach ($merchantTransactions as $transaction) {
+        echo "date: " . $transaction->getDate() . "\t";
+        $value = $currencyConverter->convert($transaction->getValue(), $transaction->getCurrencyIsoCode(), $reportCurrency);
+        echo "value: " . CurrencyConverter::$currencies[$reportCurrency]['sign'] . $value . " \n";
+    }
+    echo "\n";
+} else {
+    echo "This merchant does not have transactions. \n\n";
 }
+

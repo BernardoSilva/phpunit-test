@@ -84,7 +84,7 @@ class TransactionServiceTest extends PHPUnit_Framework_TestCase
     public function provideNoResult()
     {
         return array(
-            'one_result' => array(
+            'no_result' => array(
                 array()
             ),
         );
