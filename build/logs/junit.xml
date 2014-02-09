@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Affiliate Window task Test Suite" tests="8" assertions="8" failures="0" errors="0" time="0.012784">
+    <testsuite name="CurrencyConverterTest" file="/Users/benny/Sites/aw-task/tests/report/CurrencyConverterTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.006430">
+      <testcase name="testConvert" class="CurrencyConverterTest" file="/Users/benny/Sites/aw-task/tests/report/CurrencyConverterTest.php" line="12" assertions="1" time="0.006430"/>
+    </testsuite>
+    <testsuite name="CurrencyWebserviceTest" file="/Users/benny/Sites/aw-task/tests/report/CurrencyWebserviceTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.001089">
+      <testcase name="testGetExchangeRateReturnsFloatRate" class="CurrencyWebserviceTest" file="/Users/benny/Sites/aw-task/tests/report/CurrencyWebserviceTest.php" line="16" assertions="1" time="0.001089"/>
+    </testsuite>
+    <testsuite name="TransactionServiceTest" file="/Users/benny/Sites/aw-task/tests/report/TransactionServiceTest.php" tests="4" assertions="4" failures="0" errors="0" time="0.003955">
+      <testsuite name="TransactionServiceTest::testGetTransactionsByMerchantIdNoResults" tests="1" assertions="1" failures="0" errors="0" time="0.001666">
+        <testcase name="testGetTransactionsByMerchantIdNoResults with data set &quot;one_result&quot;" assertions="1" time="0.001666"/>
+      </testsuite>
+      <testsuite name="TransactionServiceTest::testGetTransactionsByMerchantIdOneResult" tests="1" assertions="1" failures="0" errors="0" time="0.000885">
+        <testcase name="testGetTransactionsByMerchantIdOneResult with data set &quot;multiple_results&quot;" assertions="1" time="0.000885"/>
+      </testsuite>
+      <testsuite name="TransactionServiceTest::testGetTransactionsByMerchantIdMultipleResults" tests="1" assertions="1" failures="0" errors="0" time="0.000790">
+        <testcase name="testGetTransactionsByMerchantIdMultipleResults with data set &quot;multiple_results&quot;" assertions="1" time="0.000790"/>
+      </testsuite>
+      <testsuite name="TransactionServiceTest::testGetTransactionsByMerchantIdIsReturningTransactionObject" tests="1" assertions="1" failures="0" errors="0" time="0.000614">
+        <testcase name="testGetTransactionsByMerchantIdIsReturningTransactionObject with data set &quot;one_result&quot;" assertions="1" time="0.000614"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="TransactionTableTest" file="/Users/benny/Sites/aw-task/tests/report/TransactionTableTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000703">
+      <testcase name="testOpenFile" class="TransactionTableTest" file="/Users/benny/Sites/aw-task/tests/report/TransactionTableTest.php" line="12" assertions="1" time="0.000703"/>
+    </testsuite>
+    <testsuite name="TransactionTest" file="/Users/benny/Sites/aw-task/tests/report/TransactionTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.000607">
+      <testcase name="testConnectionIsValid" class="TransactionTest" file="/Users/benny/Sites/aw-task/tests/report/TransactionTest.php" line="13" assertions="1" time="0.000607"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
