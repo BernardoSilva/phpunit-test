@@ -23,7 +23,7 @@ Provided code is just an indication, change if necessary. If something is not cl
 Use Zend Framework components as you see fit. 
 
 ---
-Assumptions made: 
+**Assumptions:** 
 
 * the currency webservice returns a random value for the currency;
 * to give a more realistic look in the Transaction class there is a method detectCurrencyBySign($sign) that set a currency for the transaction row since the sample data does not provide that detail;
@@ -50,4 +50,23 @@ To run the tests go to the root of the project and type phpunit
 ###The PHPUnit config
 There is a config file located in the root of the project named `phpunit.xml`
 
+###PHP Unit folder structure
+`tests/unit`
+This folder contains the unitary tests
 
+ `tests/functional`
+This folder contains the functional test cases
+    
+`tests/integration`
+This folder contains the integration tests
+
+`tests/mocks`
+This folder contains the Stub classes required to do the unitary tests
+
+##@todo
+* generate the coverage test files;
+* create a sqlite data source and integrate it as the data source *(when doing this check if the current code is easy to extend)*;
+* do the test using zend framework;
+
+----
+Created by: [Bernardo Silva](http://www.bernardosilva.com/)
