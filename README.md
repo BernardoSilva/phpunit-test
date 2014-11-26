@@ -1,6 +1,8 @@
 PHPUnit - test
 ============
 
+[![Build Status](https://travis-ci.org/BernardoSilva/phpunit-test.svg)](https://travis-ci.org/BernardoSilva/phpunit-test)
+
 This was a test made for [Affiliate Window](http://uk.affiliatewindow.com/) job interview. 
 
 This is my first spike using PHPUnit.
